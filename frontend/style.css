@@ -212,6 +212,32 @@ body {
 }
 
 /* Navigation */
+
+.nav-links {
+    display: block; /* Make sure it's visible by default */
+    /* Add any other necessary styles */
+}
+
+.nav-links.active {
+    /* This will be toggled when the menu button is clicked */
+    display: block; /* Or any other styling you need */
+}
+
+
+/* Make the hamburger menu appear on small screens */
+.menu-btn {
+    display: block;
+}
+
+/* Hide the menu button on large screens */
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+
+
 nav {
     position: fixed;
     width: 100%;
