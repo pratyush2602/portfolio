@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratyush Kumar Lal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Pratyush Kumar Lal</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <!-- <a href="#contact">Contact</a> -->
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+            
+                <h1>Pratyush Kumar Lal</h1>
+                <p class="title">AI/ML engineer</p>
+                <div class="social-links">
+                    <a href="https://github.com/pratyush2602"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pratyush2602"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="resume/resume.pdf" class="cta-button" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am an AI/ML Engineer with a passion for building innovative solutions. I specialize in AI-driven products, backend architecture, and machine learning, with experience in implementing scalable systems and optimizing server performance. I am always eager to learn new technologies and work on challenging projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h3>AI Engineer Intern</h3>
+                    <p><strong>Dimension Forge</strong> | <em>May 2024 – Aug 2024</em></p>
+                    <ul>
+                        <li>Engineered AI-driven products for image generation, sales chatbots, and automated blog generation using vector databases, semantic searches, and Langchain.</li>
+                        <li>Designed and implemented a scalable monolithic backend architecture with APIs, utilizing FastAPI, AWS (EC2, S3), and Docker for containerized deployment.</li>
+                        <li>Fine-tuned transformer models using LoRA and advanced prompt engineering techniques.</li>
+                        <li>Resolved SDXL’s 77 token constraint to output high-quality image generation.</li>
+                        <li>Conducted stakeholder consultation to refine workflows and enhance product alignment.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Gen-AI Developer Intern</h3>
+                    <p><strong>Synergy AI LLC</strong> | <em>Jan 2024 – Mar 2024</em></p>
+                    <ul>
+                        <li>Improved PII detection in data processing systems by optimizing Microsoft library configurations, enhancing data security and regulatory compliance.</li>
+                        <li>Developed SDK as a PyPI package for RESTful API integration; implemented CI/CD pipelines with GitHub Workflows and created developer documentation.</li>
+                        <li>Boosted server performance by optimizing Gunicorn worker threads with gevent and eventlet, improving throughput by 30% and enhancing codebase security with PyArmor obfuscation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-year">2021-Present</div>
+                    <div class="education-info">
+                        <h3>B. Tech</h3>
+                        <p class="institute">National Institute of Technology, Arunachal Pradesh</p>
+                        <p class="grade">CGPA: 7.85</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2020</div>
+                    <div class="education-info">
+                        <h3>CBSE (XII)</h3>
+                        <p class="institute">Sunbeam School Lahartara, Varanasi</p>
+                        <p class="grade">Percentage: 89%</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2018</div>
+                    <div class="education-info">
+                        <h3>CBSE (X)</h3>
+                        <p class="institute">Sunbeam School Lahartara, Varanasi</p>
+                        <p class="grade">Percentage: 95.2%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>NER Model for Tax Data</h3>
+                    <p>Trained an NER model for a 237,016-entry dataset to extract and classify entities from OCR-extracted text. Achieved an F1 score of 0.972 with XGBoost.</p>
+                    <a href="https://github.com/pratyush2602/GitHub-NER" class="cta-button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Trading Strategy & Closing Price Prediction</h3>
+                    <p>Developed a trading strategy using cryptocurrency data and predicted market sentiment with XGBoost. Optimized results for closing price predictions using LSTM networks.</p>
+                    <a href="https://github.com/pratyush2602/GitHub-Trading-strategy" class="cta-button">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Sentiment Analysis — NLP</h3>
+                    <p>Applied NLP techniques to classify text reviews based on sentiment. Achieved 88.2% accuracy using Naive Bayes algorithms and Word Embeddings.</p>
+                    <a href="https://github.com/pratyush2602/GitHub-Sentiment-analysis" class="cta-button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <p>C/C++, Python</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Software Packages</h3>
+                    <p>NumPy, Pandas, Matplotlib, TensorFlow</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, Docker, AWS, LaTeX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pratyush Kumar Lal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <button id="chatbotToggle" class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div id="chatbotContainer" class="chatbot-container" style="display: none;">
+            <div class="chatbot-header">
+                <h3>Chat with me</h3>
+                <button id="closeChat" class="close-chat">×</button>
+            </div>
+            <div id="chatMessages" class="chat-messages"></div>
+
+            
+            <!-- Typing Indicator -->
+            <div class="typing-indicator" style="display: none;">
+                <span>Typing...</span>
+            </div>
+            
+
+            <div class="chat-input">
+                <input id="chatInput" type="text" placeholder="Type your message...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
