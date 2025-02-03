@@ -132,6 +132,19 @@ function renderSkills() {
     `).join('');
 }
 
+const chatbotPrompt = document.getElementById('chatbotPrompt');
+
+chatbotToggle.addEventListener('mouseenter', () => {
+    chatbotPrompt.style.display = 'none'; // Hide prompt when hovering over chatbot button
+});
+
+chatbotToggle.addEventListener('click', () => {
+    chatbotPrompt.style.display = 'none'; // Hide prompt when chatbot opens
+});
+
+setTimeout(() => {
+    chatbotPrompt.style.display = 'block'; // Show prompt after 5 seconds
+}, 5000);
 
 // Chatbot Functionality
 chatbotToggle.addEventListener('click', async () => {

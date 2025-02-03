@@ -401,6 +401,7 @@ h2 {
     background-color: var(--primary-color);
     color: white;
     border: none;
+    animation: pulse 1.2s infinite;
     cursor: pointer;
     font-size: 1.5rem;
     display: flex;
@@ -542,6 +543,38 @@ h2 {
     }
 }
 
+.chatbot-prompt {
+    position: fixed;
+    bottom: 40px;
+    right: 90px;
+    color: var(--text-light);
+    padding: 10px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .chatbot-prompt {
+    background: var(--surface-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode .chatbot-prompt {
+    color: var(--text-dark);
+}
+
+.chatbot-prompt:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
 
 
 /* Responsive Design */
