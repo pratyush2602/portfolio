@@ -66,7 +66,7 @@ const downloadLink = document.getElementById('download-resume');
 
 downloadLink.addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/19M8QN2OsiJAFUku3r4wjL6HVdOCWtS5e/view';
+    link.href = 'https://drive.google.com/file/d/1Esj7V6WfI8P7KvF6QW39FlPvwalCZ6WT/view?usp=drive_link';
     link.download = 'Your Resume.pdf';
     link.click();
 });
