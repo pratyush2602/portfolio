@@ -83,13 +83,17 @@ async def chat_endpoint(request: ChatRequest):
 
     try:
         # Send the full history to the Groq API
-        print("history",session_history[session_id])
+        #print("history",session_history[session_id])
+        print("session_id",session_id)
         response = groq_client.chat.completions.create(
-            model="mixtral-8x7b-32768",
+            model="llama-3.3-70b-versatile",
             messages=session_history[session_id],  # Include the entire history
             temperature=0.7,
             max_tokens=512
         )
+        print("after trying to get response")
+        
+        print("response",response.choices[0].message.content)
 
         # Add the response to the session history
         session_history[session_id].append({

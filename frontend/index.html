@@ -1,216 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratyush Kumar Lal - Portfolio</title>
+    <title>Pratyush Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Remix icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--    -->
+    <link rel="stylesheet" href="">
 </head>
-<body class="light-mode">
-    <nav>
-        <div class="nav-content">
-            <div class="logo">Pratyush Kumar Lal</div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <!-- <a href="#contact">Contact</a> -->
-                <button id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
 
-    <section id="home">
-        <div class="container">
-            <div class="hero-content">
-            
-                <h1>Pratyush Kumar Lal</h1>
-                <p class="title">AI/ML engineer</p>
-                <div class="social-links">
-                    <a href="https://github.com/pratyush2602?tab=repositories"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/pratyush-kumar-a7b460228/"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="resume/Pratyush_s_Resume.pdf" class="cta-button" download>Download Resume</a>
-            </div>
-        </div>
-    </section>
+<body>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>I am an AI/ML Engineer with a passion for building innovative solutions. I specialize in AI-driven products, backend architecture, and machine learning, with experience in implementing scalable systems and optimizing server performance. I am always eager to learn new technologies and work on challenging projects.</p>
+    <div class="container">
+        <div class="side_bar">
+            <div class="side_img">
+                <img src="images/downloadnew.jpeg" alt="">
             </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-content">
-                <div class="experience-item">
-                    <h3>AI Engineer Intern</h3>
-                    <p><strong>Dimension Forge</strong> | <em>May 2024 – Aug 2024</em></p>
-                    <ul>
-                        <li>Engineered AI-driven products for image generation, sales chatbots, and automated blog generation using vector databases, semantic searches, and Langchain.</li>
-                        <li>Designed and implemented a scalable monolithic backend architecture with APIs, utilizing FastAPI, AWS (EC2, S3), and Docker for containerized deployment.</li>
-                        <li>Fine-tuned transformer models using LoRA and advanced prompt engineering techniques.</li>
-                        <li>Resolved SDXL’s 77 token constraint to output high-quality image generation.</li>
-                        <li>Conducted stakeholder consultation to refine workflows and enhance product alignment.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Gen-AI Developer Intern</h3>
-                    <p><strong>Synergy AI LLC</strong> | <em>Jan 2024 – Mar 2024</em></p>
-                    <ul>
-                        <li>Improved PII detection in data processing systems by optimizing Microsoft library configurations, enhancing data security and regulatory compliance.</li>
-                        <li>Developed SDK as a PyPI package for RESTful API integration; implemented CI/CD pipelines with GitHub Workflows and created developer documentation.</li>
-                        <li>Boosted server performance by optimizing Gunicorn worker threads with gevent and eventlet, improving throughput by 30% and enhancing codebase security with PyArmor obfuscation.</li>
-                    </ul>
+            <div class="profile_det">
+                <h2>Pratyush <span>Lal</span></h2>
+                <span class="typed_text">--
+                    <span class="text">Data Scientist</span>
+                </span>
+                <div class="social_icon">
+                    <i class="ri-mail-line"
+                        data-link="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlHDclHClMsvmLxppRLkfxnmJmPxTtmWfWGkcqBszlpMHmFpKFljDzpTcjTZppfshscRDB"></i>
+                    <i class="ri-github-fill" data-link="https://github.com/ISmokeData"></i>
+                    <i class="fa-brands fa-linkedin"
+                        data-link="https://www.linkedin.com/in/pratyush-kumar-a7b460228/"></i>
+                    
                 </div>
             </div>
+            <ul class="side_menu">
+                <li> <i class="ri-home-8-line"></i> <a href="#hero" class="nav-link">Home</a></li>
+                <li> <i class="ri-user-line"></i> <a href="#about" class="nav-link">About</a></li>
+                <li> <i class="ri-id-card-line"></i> <a href="#skills" class="nav-link">Skills</a></li>
+                <li> <i class="ri-customer-service-2-line"></i> <a href="#project" class="nav-link">Projects </a></li>
+                <li> <i class="ri-briefcase-line"></i> <a href="#resources" class="nav-link">Resources</a></li>
+                <li> <i class="ri-blogger-line"></i> <a href="#blog" class="nav-link">Blog</a></li>
+                
+            </ul>
+            <div class="download_btn">
+                <i class="ri-file-download-line"></i>
+                <a href="#" id="download-resume" class="download-link">Download Resume</a>
+            </div>
         </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-content">
-                <div class="education-item">
-                    <div class="education-year">2021-Present</div>
-                    <div class="education-info">
-                        <h3>B. Tech</h3>
-                        <p class="institute">National Institute of Technology, Arunachal Pradesh</p>
-                        <p class="grade">CGPA: 7.85</p>
+        <div class="bars">
+            <i class="ri-menu-2-line"></i>
+        </div>
+        <main>
+            <div id="hero" class="hero">
+                <div class="content">
+                    <h1>Pratyush <span>.</span></h1>
+                    <span class="typed_text">--
+                        <span class="hero_text">Data Scientist</span>
+                    </span>
+                    <p>I am an AI enthusiast passionate about leveraging artificial intelligence to solve real-world
+                        challenges.</p>
+                    <div class="hero_btns">
+                        <button class="btn" id="view-work-btn">View Work</button>
+                        <button class="btn2" id="contact-me-btn">Contact Me</button>
                     </div>
                 </div>
-                <div class="education-item">
-                    <div class="education-year">2020</div>
-                    <div class="education-info">
-                        <h3>CBSE (XII)</h3>
-                        <p class="institute">Sunbeam School Lahartara, Varanasi</p>
-                        <p class="grade">Percentage: 89%</p>
+                <div class="hero_img">
+                    <img src="images/download (12).jpeg" alt="">
+                    <img src="images/rotate-img.png" alt="" class="rotate_elem1">
+                    <img src="images/rotate-img2.png" alt="" class="rotate_elem2">
+                </div>
+                <!-- <div class="user_det">
+                    <h3> Worked with more than 100 People</h3>
+                    <div class="user_info">
+                        <div class="user_imgs">
+                            <div class="user_img">
+                                <img src="images/user1.jpeg" alt="">
+                            </div>
+                            <div class="user_img">
+                                <img src="images/user2.jpeg" alt="">
+                            </div>
+                            <div class="user_img">
+                                <img src="images/user2.jpeg" alt="">
+                            </div>
+                            <div class="user_img">
+                                <img src="images/user1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <p>100+ Clients</p>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <h1 class="head_text">Productivity Tools</h1>
+            <div class="slider">
+                <div class="slide-track">
+                    <!-- slide 1 -->
+                    <!-- <div class="slide"><img src="images/pytorchlog.png" alt="" style="height: 2px;"></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div> -->
+                    <!-- <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div> -->
+                    <!-- slide 2 -->
+                    <!-- <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                    <div class="slide"><img src="images/pytorchlog.png" alt=""></div>
+                    <div class="slide"><img src="images/images.png" alt=""></div>
+                    <div class="slide"><img src="images/hf.png" alt=""></div>
+                </div>
+            </div> -->
+
+            <section class="about" id="about">
+                <div class="headings">
+                    <h1>About Me.</h1>
+                </div>
+                <p>Hi, I am <span>Pratyush</span>, an AI Engineer and Data Science enthusiast passionate about leveraging machine learning and AI to build impactful solutions. With hands-on experience in AI-driven products, deep learning, and backend development, I specialize in LLMs, RAG, FastAPI, and scalable architectures. My expertise includes working with vector databases, fine-tuning LLMs using LoRA, and optimizing AI workflows.
+
+                    I have interned at Dimension Forge, where I contributed to image generation, chatbot development, and automated blog generation, and at Synergy ML, where I enhanced PII detection, developed SDKs, and optimized server performance. My projects span NER model training, trading strategy prediction, and deep learning-based forecasting.
+                    
+                    Proficient in Python, FastAPI, PyTorch, TensorFlow, AWS, and Docker, I thrive on solving complex problems and building AI solutions at scale. I am eager to collaborate on innovative projects that drive real-world impact and push the boundaries of AI technology.
+                </p>
+                <!-- <div class="about_info">
+                    <div class="info">
+                        <h2><span>Name</span></h2>
+                        <h2><span>Nationality</span></h2>
+                        
+                        <h2><span>Language</span></h2>
+                    </div>
+                    <div class="info_det">
+                        <h2><span>:</span> Dhanraj Verma</h2>
+                        <h2><span>:</span> India</h2>
+                        
+                        <h2><span>:</span> English / Hindi</h2>
+                    </div>
+                </div> -->
+            </section>
+            <!-- <section class="education_expirence">
+                <div class="education">
+                    <div class="headings">
+                        <h1>Education.</h1>
+                    </div>
+                    <div class="education_cards">
+                        <!-- Card 1 -->
+                        <!-- <div class="education_card">
+                            <h2>B.Tech in Computer Science Engineering</h2>
+                            <h3>Gulzar Group of Institution / 2021 - 2025</h3>
+                            <p>I graduated from college with a strong academic foundation in Data Science and
+                                related disciplines. My coursework and projects have equipped me with practical skills
+                                in Machine Learning, Deep Learning, and Natural Language Processing.</p>
+                        </div> -->
+                        <!-- Card 1 -->
+                       <!---- <div class="education_card">
+                            <h2>B.Tech in Computer Science Engineering</h2>
+                            <h3>Gulzar Group of Institution / 2021 - 2025</h3>
+                            <p>I graduated from college with a strong academic foundation in Data Science and
+                                related disciplines. My coursework and projects have equipped me with practical skills
+                                in Machine Learning, Deep Learning, and Natural Language Processing.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="experience">
+                    <div class="headings">
+                        <h1>Certification.</h1>
+                    </div>
+                    <div class="education_cards"> -->
+
+                        <!-- Card 1 -->
+                        <!-- <div class="education_card">
+                            <h2>Data Science Mentorship Program</h2>
+                            <h3>CampusX / 2023 - 2024</h3>
+                            <p>I completed a comprehensive Data Science Mentorship Program, which provided hands-on
+                                experience in machine learning, data visualization, and predictive modeling. This
+                                program enhanced my practical skills and deepened my understanding of real-world data
+                                applications.</p>
+                        </div> -->
+                        <!-- Card 1 -->
+                        <!-- <div class="education_card">
+                            <h2>Data Science Mentorship Program</h2>
+                            <h3>CampusX / 2023 - 2024</h3>
+                            <p>I completed a comprehensive Data Science Mentorship Program, which provided hands-on
+                                experience in machine learning, data visualization, and predictive modeling. This
+                                program enhanced my practical skills and deepened my understanding of real-world data
+                                applications.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="education-item">
-                    <div class="education-year">2018</div>
-                    <div class="education-info">
-                        <h3>CBSE (X)</h3>
-                        <p class="institute">Sunbeam School Lahartara, Varanasi</p>
-                        <p class="grade">Percentage: 95.2%</p>
-                    </div>
-                </div>
+            </section> -->
+
+
+            <!-- Experience Section -->
+<!-- Experience Section -->
+<section class="experience">
+    <div class="headings">
+        <h1>Experience.</h1>
+    </div>
+
+    <div class="experience_container">
+        <!-- Experience Box 1 -->
+        <div class="experience_box">
+            <div class="exp_border"></div> <!-- Vertical bar for timeline effect -->
+            <div class="exp_content">
+                <h2>AI-Engineer & Data Science Intern</h2>
+                <p class="company">Dimension Forge</p>
+                <p class="duration">May 2024 – Aug 2024</p>
+                <ul>
+                    <li>Engineered AI-driven products for image generation, sales chatbots, and automated blog generation using vector databases, RAG, and LangChain.</li>
+                    <li>Designed a scalable monolithic backend with FastAPI, AWS (EC2, S3), and Docker, while fine-tuning LLMs using LoRA.</li>
+                    <li>Resolved SDXL’s 77-token limitation using vector concatenation with PyTorch for high-quality image generation.</li>
+                    <li>Collaborated with stakeholders to optimize workflows.</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>NER Model for Tax Data</h3>
-                    <p>Trained an NER model for a 237,016-entry dataset to extract and classify entities from OCR-extracted text. Achieved an F1 score of 0.972 with XGBoost.</p>
-                    <a href="https://github.com/pratyush2602/NER-infrrd/blob/master/final.ipynb" class="cta-button">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Trading Strategy & Closing Price Prediction</h3>
-                    <p>Developed a trading strategy using cryptocurrency data and predicted market sentiment with XGBoost. Optimized results for closing price predictions using LSTM networks.</p>
-                    <a href="https://github.com/pratyush2602/Trading-Strategy-and-CLosing-price-prediction" class="cta-button">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Sentiment Analysis — NLP</h3>
-                    <p>Applied NLP techniques to classify text reviews based on sentiment. Achieved 88.2% accuracy using Naive Bayes algorithms and Word Embeddings.</p>
-                    <a href="https://github.com/pratyush2602/sentiment-analysis" class="cta-button">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <p>C/C++, Python</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Software Packages</h3>
-                    <p>NumPy, Pandas, Matplotlib, TensorFlow</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools</h3>
-                    <p>Git, GitHub, Docker, AWS, LaTeX</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    
-
-    <!-- <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-content">
-                <form id="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section> -->
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Pratyush Kumar Lal. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Chatbot Widget -->
-
-    <div id="chatbotPrompt" class="chatbot-prompt">Chat with me here! 👋</div>
-
-    <div class="chatbot-widget">
-        <button id="chatbotToggle" class="chatbot-toggle">
-            <i class="fas fa-comments"></i>
-        </button>
-        <div id="chatbotContainer" class="chatbot-container" style="display: none;">
-            <div class="chatbot-header">
-                <h3>Chat with me</h3>
-                <button id="closeChat" class="close-chat">×</button>
-            </div>
-            <div id="chatMessages" class="chat-messages"></div>
-
-            
-            <!-- Typing Indicator -->
-            <div class="typing-indicator" style="display: none;">
-                <span>Typing...</span>
-            </div>
-            
-
-            <div class="chat-input">
-                <input id="chatInput" type="text" placeholder="Type your message...">
-                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        <!-- Experience Box 2 -->
+        <div class="experience_box">
+            <div class="exp_border"></div> <!-- Vertical bar for timeline effect -->
+            <div class="exp_content">
+                <h2>AI-Dev Intern</h2>
+                <p class="company">Synergy ML</p>
+                <p class="duration">Jan 2024 – March 2024</p>
+                <ul>
+                    <li>Improved PII detection by optimizing Microsoft library configurations for better security and compliance.</li>
+                    <li>Developed an SDK as a PyPI package for RESTful API integration and implemented CI/CD pipelines with GitHub Workflows.</li>
+                    <li>Boosted server performance by optimizing Gunicorn worker threads with gevent and eventlet, improving throughput by 30%.</li>
+                    <li>Enhanced codebase security with PyArmor obfuscation.</li>
+                </ul>
             </div>
         </div>
     </div>
+</section>
 
+
+
+
+
+
+            <section class="coding_skills">
+                <div id="skills" class="headings">
+                    <h1>Skills.</h1>
+                </div>
+                <div class="skills_container">
+                    <!-- Column 1 -->
+                    <div class="skills_column">
+                        <div class="skill_item">
+                            <h3>Machine Learning & AI</h3>
+                            <p>Expertise in developing AI-driven solutions, predictive modeling, and deep learning architectures.</p>
+                        </div>
+                        <div class="skill_item">
+                            <h3>Deep Learning & LLMs</h3>
+                            <p>Proficient in training and fine-tuning LLMs using LoRA, CNNs, RNNs, and frameworks like TensorFlow & PyTorch.</p>
+                        </div>
+                        <div class="skill_item">
+                            <h3>Retrieval-Augmented Generation (RAG)</h3>
+                            <p>Experience in vector databases and implementing RAG pipelines for optimizing AI applications.</p>
+                        </div>
+                        <div class="skill_item">
+                            <h3>Backend Development</h3>
+                            <p>Skilled in FastAPI, RESTful API development, and scalable monolithic architectures.</p>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="skills_column">
+                        <div class="skill_item">
+                            <h3>Python & Software Development</h3>
+                            <p>Strong proficiency in Python, C/C++, SQL, and JavaScript for AI and software engineering.</p>
+                        </div>
+                        <div class="skill_item">
+                            <h3>Cloud & Deployment</h3>
+                            <p>Experience with AWS (EC2, S3), Docker, and CI/CD pipelines for scalable AI solutions.</p>
+                        </div>
+                        <div class="skill_item">
+                            <h3>Performance Optimization</h3>
+                            <p>Optimized AI workflows, improved server performance, and enhanced inference speeds.</p>
+                        </div>
+                        <div class="skill_item">
+                            <h3>MLOps & Security</h3>
+                            <p>Proficient in ML model deployment, PyArmor security, and performance monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- <section class="coding_skills">
+                <div class="headings">
+                    <h1>TechStack.</h1>
+                </div>
+                <div class="skills_container">
+                    <!-- skills 1 -->
+            <!-- <div class="skills" data-value="79%" style="background: conic-gradient(rgb(188,231,12) 79%, rgba(128,128,128,0.28) 0deg);">
+                        79%
+                     </div>
+                    <!-- skills 2 -->
+            <!-- <div class="skills" data-value="79%" style="background: conic-gradient(rgb(255,117,156) 92%, rgba(128,128,128,0.28) 0deg);"> -->
+            <!-- 92% -->
+            <!-- </div> -->
+            <!-- skills 3 -->
+            <!-- <div class="skills" data-value="79%" style="background: conic-gradient(rgb(0,204,151) 85%, rgba(128,128,128,0.28) 0deg);"> -->
+            <!-- 85%
+                     </div> -->
+            <!-- skills 4 -->
+            <!-- <div class="skills" data-value="79%" style="background: conic-gradient(rgb(199,79,196) 75%, rgba(128,128,128,0.28) 0deg);">
+                        75%
+                     </div>
+                </div>
+            </section>  -->
+
+            <section class="projects" id="project">
+                <div class="headings">
+                    <h1>Projects.</h1>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="card">
+                            <img src="images/ner_model.png" alt="NER Model">
+                            <p class="description">NER Model for Tax Data</p>
+                            <a class="repo" href="https://github.com/yourgithub/NER_Tax_Data" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img src="images/trading_strategy.png" alt="Trading Strategy">
+                            <p class="description">Trading Strategy & Price Prediction</p>
+                            <a class="repo" href="https://github.com/yourgithub/Trading_Strategy" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img src="images/mlops.png" alt="MLOps Deployment">
+                            <p class="description">MLOps Pipeline for Model Deployment</p>
+                            <a class="repo" href="https://github.com/yourgithub/MLOps_Pipeline" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lastline">
+                    <h3>More projects coming soon!</h3>
+                </div>
+            </section>
+            
+
+            
+
+            <section class="education">
+                <div class="headings">
+                    <h1>Education.</h1>
+                </div>
+                
+                <div class="education_container">
+                    <!-- Education Box 1 -->
+                    <div class="education_box">
+                        <div class="edu_content">
+                            <h2>NIT Arunachal Pradesh</h2>
+                            <p>B.tech</p>
+                            <p><strong>CGPA:</strong> 7.85 | <strong>2021 - Present</strong></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Box 2 -->
+                    <div class="education_box">
+                        <div class="edu_content">
+                            <h2>CBSE (XII)</h2>
+                            <p>Sunbeam School Lahartara, Varanasi</p>
+                            <p><strong>Percentage:</strong> 89% | <strong>2020</strong></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Box 3 -->
+                    <div class="education_box">
+                        <div class="edu_content">
+                            <h2>CBSE (X)</h2>
+                            <p>Sunbeam School Lahartara, Varanasi</p>
+                            <p><strong>Percentage:</strong> 95.2% | <strong>2018</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
+
+            <section id="resources" class="resources">
+                <div class="headings">
+                    <h1>Resources.</h1>
+                </div>
+                <div class="cardres">
+                    <table>
+                        <tr>
+                            <td>Machine Learning</td>
+                            <td><a href="https://drive.google.com/drive/folders/111GwIa38ajM6yBF6UeUhuyRvhhZHCB0H?usp=drive_link"
+                                    target="_blank">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>Deep Learning</td>
+                            <td><a href="https://drive.google.com/drive/folders/10TBLexI9KoBxWq10Xgg8M2PCDaqjXf5M?usp=drive_link"
+                                    target="_blank">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td><a href="https://drive.google.com/drive/folders/1hdOlptxbWQ3QNt7kqRtzMBqeQjwA5VAd?usp=drive_link"
+                                    target="_blank">Notes</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td><a href="https://drive.google.com/drive/folders/1378LYT2ZUZgmzkoCTuxuCEOwTgwoh1bI?usp=drive_link"
+                                    target="_blank">Notes</a></td>
+                        </tr>
+                        <tr>
+                            <td>E-Books</td>
+                            <td><a href="https://drive.google.com/drive/folders/1Hrp4bHSDkKYpbjAkMz6dr6pJFUtjzwqS?usp=drive_link"
+                                    target="_blank">Notes</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                
+            <!-- Chatbot Floating Prompt -->
+            <div id="chatbotPrompt" class="chatbot-prompt">Chat with me here! 👋</div>
+
+            <!-- Chatbot Widget (Initially Hidden) -->
+            <div id="chatbotWidget" class="chatbot-widget">
+                <div id="chatbotContainer" class="chatbot-container">
+                    <div class="chatbot-header">
+                        <h3>Chat with me</h3>
+                        <button id="closeChat" class="close-chat">×</button>
+                    </div>
+                    <div id="chatMessages" class="chat-messages">
+                        <!-- Chat messages will appear here -->
+                    </div>
+                    <div class="chat-input">
+                        <input id="chatInput" type="text" placeholder="Type your message...">
+                        <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chatbot CSS -->
+            <style>
+            /* Chatbot Prompt */
+            #chatbotPrompt {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #007bff;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                font-size: 14px;
+                z-index: 1000;
+            }
+
+            /* Chatbot Widget */
+            #chatbotWidget {
+                display: none;
+                position: fixed;
+                bottom: 80px;
+                right: 20px;
+                width: 350px;
+                height: 450px;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Header */
+            .chatbot-header {
+                background: #007bff;
+                color: #fff;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+            }
+
+            .close-chat {
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            /* Messages */
+            .chat-messages {
+                height: 300px;
+                overflow-y: auto;
+                padding: 10px;
+                background: #f9f9f9;
+                font-size: 14px;
+            }
+
+            /* Input */
+            .chat-input {
+                display: flex;
+                padding: 10px;
+                border-top: 1px solid #ddd;
+                background: #fff;
+            }
+
+            .chat-input input {
+                flex: 1;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .chat-input button {
+                background: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 8px 12px;
+                margin-left: 5px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            .chat-input button:hover {
+                background: #0056b3;
+            }
+
+
+
+            /* Message Styling */
+.chat-message {
+    max-width: 80%;
+    margin: 6px 0;
+    padding: 8px 12px;
+    border-radius: 15px;
+    display: inline-block;
+    clear: both;
+}
+
+/* User message style */
+.chat-message.user {
+    background-color: #dcf8c6;
+    color: #000;
+    align-self: flex-end;
+    float: right;
+    text-align: right;
+}
+
+/* Bot message style */
+.chat-message.bot {
+    background-color: #e6e6e6;
+    color: #000;
+    align-self: flex-start;
+    float: left;
+    text-align: left;
+}
+
+
+
+
+            </style>
+
+          <script>
+document.addEventListener("DOMContentLoaded", async function () {
+    const prompt = document.getElementById("chatbotPrompt");
+    const widget = document.getElementById("chatbotWidget");
+    const closeBtn = document.getElementById("closeChat");
+    const sendBtn = document.getElementById("chatSend");
+    const input = document.getElementById("chatInput");
+    const messages = document.getElementById("chatMessages");
+
+    let sessionId = null;
+    let messageHistory = [];
+
+    // Start session
+    async function startSession() {
+        try {
+            const res = await fetch("/api/chat/start", {
+                method: "POST"
+            });
+            const data = await res.json();
+            sessionId = data.session_id;
+            console.log("Session started:", sessionId);
+        } catch (error) {
+            console.error("Error starting session:", error);
+        }
+    }
+
+    await startSession(); // Start the session when page loads
+
+    // Open chatbot
+    prompt.addEventListener("click", () => {
+        widget.style.display = "block";
+        prompt.style.display = "none";
+    });
+
+    // Close chatbot
+    closeBtn.addEventListener("click", () => {
+        widget.style.display = "none";
+        prompt.style.display = "block";
+    });
+
+    // Send message
+    sendBtn.addEventListener("click", sendMessage);
+    input.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") sendMessage();
+    });
+
+    function addMessage(text, sender) {
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("chat-message", sender);
+        messageDiv.textContent = text;
+        messages.appendChild(messageDiv);
+        messages.scrollTop = messages.scrollHeight;
+    }
+
+    async function sendMessage() {
+        const userInput = input.value.trim();
+        if (!userInput) return;
+
+        addMessage(userInput, "user");
+        messageHistory.push({ role: "user", content: userInput });
+        input.value = "";
+
+        try {
+            const res = await fetch("/api/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    session_id: sessionId,
+                    messages: [{ role: "user", content: userInput }]
+                })
+            });
+
+            const data = await res.json();
+
+            if (data.status === "success") {
+                const botReply = data.response;
+                addMessage(botReply, "bot");
+                messageHistory.push({ role: "assistant", content: botReply });
+            } else {
+                addMessage("Something went wrong.", "bot");
+            }
+        } catch (error) {
+            console.error("Error sending message:", error);
+            addMessage("Server error. Please try again later.", "bot");
+        }
+    }
+});
+</script>
+
+
+
+            <!-- <section id="contact" class="contact">
+                <div class="headings">
+                    <h1>Get In Touch.</h1>
+                </div>
+                <div class="contact_head">
+                    <h2>TAKE A COFFEE & CHAT WITH ME</h2>
+                </div>
+                <div class="contact_container">
+                    <div class="contact_content">
+                        <div class="contact_box">
+                            <!-- icon  -->
+                            <!-- <i class="ri-mail-line"></i>
+                            <div class="box_info">
+                                <p>Email</p>
+                                <h2>vermdhanraj015@gmail.com</h2>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <div class="contact_box">
+                            <!-- icon  -->
+                            <!-- <i class="ri-smartphone-line"></i>
+                            <div class="box_info">
+                                <p>Phone</p>
+                                <h2>(+91) 88378 14050</h2>
+                            </div> -->
+                        <!-- </div> -->
+                        <!--<div class="inputs">
+                            <input type="email" placeholder="Your Email">
+                            <input type="text" placeholder="Write Your Message">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_btn">
+                    <button>Submit Now</button>
+                </div> -->
+                <!-- <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55157.58564446158!2d75.86501439999998!3d30.227119699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1736314975595!5m2!1sen!2sin"
+                        width="100%" height="230" style="border-radius:19px; border: none;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
+                <div class="copyright">
+                    <p>© 2025 | All rights reserved by<span>Pratyush</span></p>
+                </div>
+            </section>
+
+            
+
+
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+
+
+
+    <!-- Typed JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
