@@ -1,12 +1,12 @@
 var typed2 = new Typed('.text', {
-    strings: [,'Developer', 'Freelancer', 'Engineer'],
+    strings: ['Developer-', 'Freelancer-', 'Engineer-'],
     typespeed: 7000,
     backspeed: 7000,
     cursorChar:'',
     loop: true,
 })
 var typed2 = new Typed('.hero_text', {
-    strings: [,'Data Engineer-', 'Software Developer', 'AI Engineer--'],
+    strings: [,'Data Engineer--', 'Software Developer--', 'AI Engineer--'],
     typespeed: 7000,
     backspeed: 7000,
     cursorChar:'',
