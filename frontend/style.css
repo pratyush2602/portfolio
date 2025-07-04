@@ -8,6 +8,10 @@
     font-family: 'Poppins';
 }
 
+html {
+  font-size: 80%;
+}
+
 body{
     background-image: url(images/bg.png);
     background-color: #0F141C;
@@ -232,10 +236,11 @@ main::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     gap: 20px;
+    /* margin-top:  0rem; */
 }
-button{
-    width: 150px;
-    height:40px;
+button {
+    width: 120px;             /* Reduced width */
+    height: 35px;             /* Slightly shorter height */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -244,11 +249,13 @@ button{
     background-color: #00cc97;
     color: #000;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1rem;          /* Smaller font size */
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin-top: 30px   /* Shift upward if needed */
 }
+
 button::after{
     content: '';
     position: absolute;
